@@ -1,0 +1,22 @@
+[MASTER]
+
+disable = R,C0114,C0200
+
+const-rgx = ([a-z_]+[a-z0-9_]+)$|([A-Z_]+[A-Z0-9_]+)$
+variable-naming-style = snake_case
+function-naming-style = camelCase
+argument-naming-style = snake_case
+
+good-names = i,j,k,x,y,z
+
+max-line-length = 92
+
+indent-string = "    "
+
+extension-pkg-whitelist = numpy,turtle
+
+
+[TYPECHECK]
+
+ignored-modules = numpy,turtle
+ignored-classes = numpy,turtle
